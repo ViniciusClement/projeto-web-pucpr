@@ -7,6 +7,10 @@
     font-family: IBM Plex Mono;
 }
 
+body{
+    height: 100%;
+}
+
 .container{
     display: grid;
     grid-template-areas: 
@@ -17,7 +21,7 @@
 }
 
 body {
-    background-color:gray;
+    /* background-color:gray; */
 }
 
 /* header */
