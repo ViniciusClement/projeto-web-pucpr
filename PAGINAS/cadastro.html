@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HenriCle</title>
-    <link rel="stylesheet" href="CSS/cadastro.css">
+    <title> HenriCle - Cadastro </title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="">
-                    <img id="logo" src="IMG/Logo/logo-removebg.png" alt="logo">
+                    <img id="logo" src="../IMG/Logo/logo-removebg.png" alt="logo">
                 </a>
             </div>
 
@@ -35,7 +35,7 @@
                         <a href="">
                         Busca
                         <i>
-                            <img class="icon" src="IMG/Icones/Dual colors/icons8-search-80.png" alt="Lupa">
+                            <img class="icon" src="../IMG/Icones/Dual colors/icons8-search-80.png" alt="Lupa">
                         </i>
                     </a>
                     </li>
@@ -45,7 +45,7 @@
                         <a href="">
                         Carrinho
                         <i>
-                            <img class="icon" src="IMG/Icones/Dual colors/icons8-checkout-80.png" alt="Carrinho">
+                            <img class="icon" src="../IMG/Icones/Dual colors/icons8-checkout-80.png" alt="Carrinho">
                         </i>
                     </a>
                     </li>
@@ -54,15 +54,45 @@
                     <a class="button-1" href="">
                     Login
                 </a>
+                    <li>
+                        <i>
+                            <img class="icon" src="../IMG/Icones/Dual colors/user.svg" width="80px" height="80px">
+                        </i>
+                    </li>
                 </ul>
 
             </nav>
         </header>
 
-        <div class="main">
-            <input type="text" id="cUsuario" /> <br>
+        <div class="titulo-cadastro">
+            <h1> CADASTRO </h1>
         </div>
 
+        <div class="main" id="container-login">
+            <form action="">
+
+                <label for="cNomeCompleto"> NOME COMPLETO </label>
+                <input type="text" id="cNomeCompleto" placeholder="Digite seu Nome Completo" />
+
+                <label for="cEmail"> E-MAIL </label>
+                <input type="email" id="cEmail" placeholder="Digite seu E-mail" /> <br>
+
+                <label for="cEndereco"> ENDEREÇO </label>
+                <input type="text" id="cEndereco" placeholder="Digite seu Endereço" />
+
+                <label for="cCep"> CEP </label>
+                <input type="text" id="cCep" placeholder="Digite seu CEP" /> <br>
+
+                <label for="cSenha"> SENHA </label>
+                <input type="password" id="cSenha" placeholder="Digite sua Senha" />
+
+                <label for="cConfirmarSenha"> CONFIRMAR SENHA </label>
+                <input type="password" id="cConfirmarSenha" placeholder="Confirme sua Senha" /> <br>
+
+                <input type="submit" value="Cadastrar" class="buttonRegister" id="bCadastrar" />
+
+            </form>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -79,25 +109,25 @@
                 <ul>
                     <li>
                         <a href="">
-                            <img class="icon-2" src="IMG/Icones/Dual colors/icons8-instagram (1).svg" alt="Instragram">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-instagram (1).svg" alt="Instragram">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img class="icon-2" src="IMG/Icones/Dual colors/icons8-facebook.svg" alt="Facebook">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-facebook.svg" alt="Facebook">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img class="icon-2" src="IMG/Icones/Dual colors/icons8-whatsapp.svg" alt="Whatsapp">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-whatsapp.svg" alt="Whatsapp">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img class="icon-2" src="IMG/Icones/Dual colors/icons8-twitter.svg" alt="Twitter">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-twitter.svg" alt="Twitter">
                         </a>
                     </li>
 
