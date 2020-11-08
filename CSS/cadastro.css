@@ -130,7 +130,7 @@ footer {
 }
 
 
-/* ======================== css DO CADASTRO ======================== */
+/* ======================== CSS DO CADASTRO ======================== */
 
 
 /* DIV DO TÍTULO DA PÁGINA */
@@ -145,6 +145,13 @@ footer {
     color: white;
 }
 
+.centralizar {
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
 
 /* CONTAINER DO FORMULÁRIO */
 
@@ -152,8 +159,8 @@ footer {
     font-family: IBM Plex Mono;
     background-color: white;
     opacity: 10;
-    width: auto;
-    height: auto;
+    width: 450px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -183,6 +190,7 @@ input {
 }
 
 input {
+    cursor: pointer;
     width: 95%;
     border-bottom-style: ridge;
     border-radius: 10px 10px 10px 10px;
@@ -213,5 +221,5 @@ input:focus {
 
 .buttonRegister:hover {
     background-color: #138af2;
-    transition: 2s;
+    transition: 1.5s;
 }
