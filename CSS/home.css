@@ -9,13 +9,13 @@
 .background div {
     width: 60%;
     height:250px;
-    /* background-color: rgba(78, 78, 78, 0.198); */
+    /* background-color: rgb(248, 0, 0); */
     margin:0 auto;
     transform: translateY(100%);
+    text-align: center;
 }
 
 .background p {
-    text-align:center;
     color:white;
     font-size: 32px;
 }
@@ -29,7 +29,6 @@
     display: inline-block;
     cursor: pointer;
     margin-top: 70px;
-    margin-left: 350px;
 }
 
 .button-2 {
@@ -122,4 +121,78 @@ iframe {
 
 .video{
     text-align: center;
+}
+
+.container-depoimento {
+    position:relative;
+}
+
+.depoimento {
+    width:100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.card-2 {
+    width:20%;
+    height:400px;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.person {
+    width:200px;
+    height:200px;
+    margin-top:25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#p-1{
+    background-image:url("/IMG/Imagens/girl-984060_640.jpg");
+    background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#p-2{
+    background-image:url("/IMG/Imagens/beard-1845166_640.jpg");
+    background-position: center;
+	background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+#p-3{
+    background-image:url("/IMG/Imagens/beautiful-1274056_640.jpg");
+    background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desc-person {
+    margin-top: 20px;
+    padding:20px;
+    /* background-color:yellow; */
+}
+
+.desc-person h3 {
+    margin-bottom:20px;
+    text-transform: uppercase;
+    color:white;
+}
+
+.desc-person p {
+    color:white;
+    line-height:1.5;
+}
+
+#background-person {
+    width:100%;
+    height:300px;
+    background-color:#4A40FF;
+    transform:translateY(-100%);
 }
