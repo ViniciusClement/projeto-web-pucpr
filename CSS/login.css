@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: IBM Plex Mono;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header" "header" "header" "main" "main" "main" "footer" "footer" "footer";
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    grid-area: header;
+}
+
+nav {
+    width: 50%;
+    /* background-color:red; */
+}
+
+
+/* Class */
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    /* background-color:blue; */
+}
+
+.menu-bar li {
+    margin: 0 15px;
+    /* background-color: red; */
+}
+
+.menu-bar li a {
+    display: block;
+    padding: 10px;
+    color: #020F59;
+    font-weight: 700;
+}
+
+.icon {
+    height: 20px;
+}
+
+.button-1 {
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #0424D9;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+/* ID  */
+
+#logo {
+    height: 100px;
+    cursor: pointer;
+}
+
+
+/* Middle */
+
+.main {
+    height: auto;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    height: 210px;
+    padding: 10px 50px;
+    background-color: #020F59;
+    color: white;
+}
+
+.descricao {
+    height: 120px;
+    margin-top: 30px;
+}
+
+.descricao p {
+    margin: 20px 0;
+}
+
+.redes-sociais ul {
+    display: flex;
+    margin-top: 70px;
+}
+
+.redes-sociais li {
+    margin: 0 15px;
+}
+
+.icon-2 {
+    height: 50px;
+}
+
+.copyright {
+    margin-top: 160px;
+}
+
+
+/* ======================== CSS DO CADASTRO ======================== */
+
+
+/* DIV DO TÍTULO DA PÁGINA */
+
+.titulo-cadastro {
+    width: 100%;
+    height: 100px;
+    background-color: #020F59;
+    text-align: center;
+    color: white;
+}
+
+.titulo-cadastro h2 {
+    text-transform:uppercase;
+    padding-top:35px;    
+}
+
+
+/* CONTAINER DO LOGIN */
+
+#container-login {
+    opacity: 10;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: left;
+    color: #0e2773;
+}
+
+
+/* CSS DOS ELEMENTOS DO LOGIN */
+
+label,
+input {
+    font-size: larger;
+    background-color: transparent;
+    font-family: IBM Plex Mono;
+    color: #021ba8;
+    width: 100%;
+    text-align: left;
+}
+
+input {
+    color: black;
+    cursor: pointer;
+    width: 95%;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: #0424D9;
+    padding: 15px;
+    font-size: medium;
+}
+
+input:focus {
+    border-color: #138af2;
+}
+
+
+/* CSS DOs BOTÕES */
+
+.buttonEnter {
+    font-weight: bold;
+    border-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    text-align: center;
+    background-color:  #0424D9;
+    display: inline-block;
+    padding:20px 75px;
+}
+
+
+.buttonRegister {
+    font-weight: bold;
+    border-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    text-align: center;
+    background-color: gray;
+    width: 210px;
+    margin-top: 5%;
+    padding:20px 0px;
+    display: inline-block;
+}
+
+.buttonRegister:hover {
+    background-color: #0424D9;
+    transition: 1.0s;
+}
