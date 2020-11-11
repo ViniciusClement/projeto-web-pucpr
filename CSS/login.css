@@ -12,11 +12,6 @@
     grid-template-areas: "header" "header" "header" "main" "main" "main" "footer" "footer" "footer";
 }
 
-body {
-    background-image: url(../IMG/Imagens/programingPc.jpg);
-    background-size: cover;
-}
-
 
 /* header */
 
@@ -137,8 +132,6 @@ footer {
 /* DIV DO TÍTULO DA PÁGINA */
 
 .titulo-cadastro {
-    font-size: large;
-    font-family: IBM Plex Mono;
     width: 100%;
     height: 100px;
     background-color: #020F59;
@@ -146,28 +139,22 @@ footer {
     color: white;
 }
 
-.centralizar {
-    margin-top: 2%;
-    text-align: center;
-    width: 100%;
-    height: 50px;
+.titulo-cadastro h2 {
+    text-transform:uppercase;
+    padding-top:35px;    
 }
 
 
 /* CONTAINER DO LOGIN */
 
 #container-login {
-    font-family: IBM Plex Mono;
-    background-color: white;
-    display: block;
     opacity: 10;
     width: 500px;
-    height: 200px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: 2vh;
-    margin-bottom: 14vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     text-align: left;
     color: #0e2773;
 }
