@@ -20,8 +20,10 @@ function verificaUsuario(){
         for(let x = 0; x < usuarios.length; x++){
             
             if(usuarios[x][1] == email && usuarios[x][4] == senha) {
-                alert("Usuário identificado!");
-                
+                alertify.success('Usuário identificado!');
+
+                window.location.assign("");
+
             } else {
                 alert("E-mail ou senha inválidos!");
                
