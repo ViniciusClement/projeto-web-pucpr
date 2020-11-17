@@ -20,9 +20,18 @@ function verificaUsuario(){
         for(let x = 0; x < usuarios.length; x++){
             
             if(usuarios[x][1] == email && usuarios[x][4] == senha) {
+                
+                var log = "conf";
+
+                usuarios[x].push(log);
+
                 alertify.success('Usuário identificado!');
 
-                window.location.assign("");
+                console.log(usuarios[x]);
+
+                storage.setItem('cadastro', JSON.stringify(usuarios[x]));
+
+                window.location.assign("../PAGINAS/autenticado.html");
 
             } else {
                 alert("E-mail ou senha inválidos!");
