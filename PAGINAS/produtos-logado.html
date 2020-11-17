@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HenriCle</title>
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+    <script src="../JS/produtos.js"></script>
+    <script src="../JS/alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="../CSS/produtos.css">
+    <link rel="stylesheet" href="../CSS/produtos-logado.css">
+    <link rel="stylesheet" href="../CSS/autenticado.css">
+    <link rel="stylesheet" href="../JS/alertifyjs/css/alertify.rtl.css">
+    <link rel="stylesheet" href="../JS/alertifyjs/css/themes/default.rtl.css">
+</head>
+<body>
+    
+    <!-- Container -->
+     <div class="container">
+        
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img id="logo" src="../IMG/Logo/logo-removebg.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu -->
+        <nav>
+            <ul class="menu-bar">
+                <!-- Produtos -->
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+
+                <!-- Carrinho -->
+                <li>
+                    <a href="carrinho.html">
+                    Carrinho
+                    <i>
+                        <img class="icon" src="../IMG/Icones/Dual colors/icons8-checkout-80.png" alt="Carrinho">
+                    </i>
+                </a>
+                </li>
+
+                <!-- Button Login -->
+                <a class="button-1" href="#">Sign out</a>                        
+                <i>
+                    <img src="../IMG/Icones/Dual colors/user.svg" class="icon-2" alt="user">
+                </i> 
+            </ul>
+
+        </nav>
+    </header>
+
+        <!-- Main -->
+        <div class="main">
+            
+            <div class="titulo-produtos">
+                <h2>Produtos</h2>
+            </div>
+
+            <!-- Linha 1 -->
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="card" id="card-1">
+
+                    <div class="img" id="img-1"></div>
+                    
+                    <div class="desc-card">
+                        <h3 id="h3-1" value="Título A">Título A</h3>
+                        <h4 id="h4-1" value="R$ 1299,00">R$ 1299,00</h4>
+                        <p id="p-1" value="There are many variations of passages of 
+                        Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-1">+</a>
+                        </div>
+                    </div>
+               
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" id="card-2">
+               
+                    <div class="img" id="img-2"></div>
+               
+                    <div class="desc-card">
+                        <h3 id="h3-2" value="Titulo B">Título B</h3>
+                        <h4 id="h4-2" value="R$ 1099,00">R$ 1099,00</h4>
+                        <p id="p-2" value="There are many variations of
+                        passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+               
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-2">+</a>
+                        </div>
+                    </div>
+               
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" id="card-3">
+               
+                    <div class="img" id="img-3"></div>
+               
+                    <div class="desc-card">
+                        <h3 id="h3-3" value="Titulo C">Título C</h3>
+                        <h4 id="h4-3" value="R$ 999,00">R$ 999,00</h4>
+                        <p id="p-3" value="There are many variations of 
+                        passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-3">+</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Linha 2 -->
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="card" id="card-4">
+                    
+                    <div class="img" id="img-4"></div>
+                    
+                    <div class="desc-card">
+                        <h3 id="h3-4" value="Titulo D">Título D</h3>
+                        <h4 id="h4-4" value="R$ 899,00">R$ 899,00</h4>
+                        <p id="p-4" value="There are many variations of 
+                        passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-4">+</a>
+                        </div>
+                     </div>
+               
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" id="card-5">
+                
+                    <div class="img" id="img-5"></div>
+                
+                    <div class="desc-card">
+                        <h3 id="h3-5" value="Titulo E">Título E</h3>
+                        <h4 id="h4-5" value="R$ 799,00">R$ 799,00</h4>
+                        <p id="p-5" value="There are many variations of 
+                        passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-5">+</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" id="card-6">
+                    
+                    <div class="img" id="img-6"></div>
+                    
+                    <div class="desc-card">
+                        <h3 id="h3-6" value="Titulo F">Título F</h3>
+                        <h4 id="h4-6" value="R$ 699,00">R$ 699,00</h4>
+                        <p id="p-6" value="There are many variations of passages of 
+                        Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-6">+</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Linha 3 -->
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="card" id="card-7">
+
+                    <div class="img" id="img-7"></div>
+
+                    <div class="desc-card">
+                        <h3 id="h3-7" value="Titulo G">Título G</h3>
+                        <h4 id="h4-7" value="R$ 599,00">R$ 599,00</h4>
+                        <p id="p-7" value="There are many variations of
+                         passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-7">+</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" id="card-8">
+                    
+                    <div class="img" id="img-8"></div>
+                    
+                    <div class="desc-card">
+                        <h3 id="h3-8" value="Titulo H">Título H</h3>
+                        <h4 id="h4-8" value="R$ 499,00">R$ 499,00</h4>
+                        <p id="p-8" value="There are many variations of 
+                        passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-8">+</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" id="card-9">
+                    
+                    <div class="img" id="img-9"></div>
+                    
+                    <div class="desc-card">
+                        <h3 id="h3-9" value="Titulo I">Título I</h3>
+                        <h4 id="h4-9" value="R$ 399,00">R$ 399,00</h4>
+                        <p id="p-9" value="There are many variations of
+                         passages of Lorem Ipsum available">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    
+                    <div class="end-card">
+                        <div class="button-compra">
+                            <a href="#" id="btn-9">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- End Main -->
+        </div>
+
+
+        <!-- Footer -->
+        <!-- <footer class="footer">
+
+            <div class="descricao">   
+                <p>E-mail: Henricle@gmail.com</p>
+                <p>Contato: +55 (41) 12345-6789</p>
+                <p>Endereço: Street Time Square 272, NY</p>
+            </div>
+
+            <p class="copyright">Copyright 2019 - 2021</p>
+
+            <div class="redes-sociais">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-instagram (1).svg" alt="Instragram">
+                        </a>
+                    </li>
+
+                   <li>
+                        <a href="">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-whatsapp.svg" alt="Whatsapp">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            <img class="icon-2" src="../IMG/Icones/Dual colors/icons8-twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </footer>  -->
+
+        <!-- End Container -->
+     </div>            
+
+</body>
+</html>
