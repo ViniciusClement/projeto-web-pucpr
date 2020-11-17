@@ -160,6 +160,7 @@ footer {
     display: inline-block;
     cursor: pointer;
     margin-top: 70px;
+    transition: 0.5s;
 }
 
 .button-2 {
@@ -170,6 +171,7 @@ footer {
     padding:10px;
     display: inline-block;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Produtos */
@@ -343,4 +345,19 @@ iframe {
     height: 500px;
     background-image: url("/IMG/Imagens/map.jpg");
     margin-bottom: 80px;
+}
+
+/* Hover */
+
+.button-3:hover {
+    border:none;
+    background-color:white;
+    font-size: 24px;
+    color: #0424D9;
+    border-radius:5px;
+    padding:10px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 70px;
+    transition: 0.5s;
 }

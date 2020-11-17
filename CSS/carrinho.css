@@ -7,10 +7,6 @@
     font-family: IBM Plex Mono;
 }
 
-body{
-    height: 100%;
-}
-
 .container{
     display: grid;
     grid-template-areas: 
@@ -85,6 +81,11 @@ nav {
 
 /* Main */
 
+.main {
+    /* background-color: green; */
+    grid-area:main;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -94,6 +95,7 @@ footer {
     padding:10px 50px;
     background-color:#020F59;
     color:white;
+    margin-top: 100px;
 }
 
 .descricao {
@@ -124,10 +126,6 @@ footer {
 
 /* Main */
 
-.main {
-    height:520px;
-}
-
 .titulo-carrinho {
     width: 100%;
     height: 100px;
@@ -143,3 +141,54 @@ footer {
     padding-top: 35px;
 }
 
+/* Conteudo do LocalStorage */
+
+.card-dinamico {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+}
+
+thead {
+    text-align: center;
+}
+
+thead tr {
+    text-transform: uppercase;
+    font-weight:700;
+}
+
+
+tbody td {
+    background-color:#afb5d3;
+}
+
+
+.table thead td {
+    background-color:#0424D9;
+    color:white;
+    padding:15px;
+}
+
+.table {
+    text-align: center;
+}
+
+.btn-excluir {
+    cursor: pointer;
+    background-color:transparent;
+    border:none;
+    padding: 10px;    
+    width: 100%;
+    transition:0.3s;
+    text-transform: uppercase;
+}
+
+/* Hover */
+
+.btn-excluir:hover{
+    background-color:#d90404;
+    transition: 0.3s;
+    color:white;
+}
