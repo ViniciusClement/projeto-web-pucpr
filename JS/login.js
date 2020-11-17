@@ -22,20 +22,23 @@ function verificaUsuario(){
             if(usuarios[x][1] == email && usuarios[x][4] == senha) {
                 
                 var log = "conf";
+                var aux = [];
 
                 usuarios[x].push(log);
 
+                aux.push(usuarios[x]);
+
                 alertify.success('Usuário identificado!');
 
-                console.log(usuarios[x]);
+                console.log(aux);
 
-                storage.setItem('cadastro', JSON.stringify(usuarios[x]));
+                storage.setItem('cadastro', JSON.stringify(aux));
 
                 window.location.assign("../PAGINAS/autenticado.html");
 
             } else {
-                alert("E-mail ou senha inválidos!");
-               
+                alertify.success('Usuário ou senha inválido!');
+
                 $("#cEmail").val("");
                 $("#cSenha").val("");
             }
