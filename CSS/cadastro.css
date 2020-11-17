@@ -177,7 +177,6 @@ input {
 
 input:focus {
     background-color: #afadad;
-    color: white;
     transition: 0.3s all;
 }
 
@@ -201,4 +200,10 @@ input::placeholder {
     border-radius: 5px;
     font-size: 22px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonRegister:hover {
+    transition: 0.5s;
+    background-color: #405af1; 
 }
