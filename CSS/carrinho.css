@@ -185,6 +185,16 @@ tbody td {
     text-transform: uppercase;
 }
 
+.btn-pagamento {
+    cursor: pointer;
+    background-color:transparent;
+    border:none;
+    padding: 10px;    
+    width: 100%;
+    transition:0.3s;
+    text-transform: uppercase;
+}
+
 /* Hover */
 
 .btn-excluir:hover{
@@ -192,3 +202,10 @@ tbody td {
     transition: 0.3s;
     color:white;
 }
+
+.btn-pagamento:hover{
+    background-color:#04d944;
+    transition: 0.3s;
+    color:white;
+}
+

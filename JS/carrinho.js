@@ -5,9 +5,21 @@ $(document).ready(function(){
     getItem();
 
     console.log(array);
-
     excluir();
+    pagar();
 });
+
+function pagar(){
+
+    for(let x = 0; x < array.length; x++){
+
+        $(`#btn2-${x}`).click(function(){
+
+            window.location.assing("../PAGINAS/pagamento.html");
+        
+        });
+    }
+}
 
 function excluir (){
 
@@ -49,6 +61,9 @@ function getItem(){
         conteudo +="<td>" + array[x][2] +"</td>";
         conteudo +="<td>";
         conteudo +="<button class='btn-excluir' id='btn-"+ x +"'>Excluir</button>";
+        conteudo +="</td>";
+        conteudo +="<td>";
+        conteudo +="<button class='btn-pagamento' id='btn2-"+ x +"'>Pagamento</button>";
         conteudo +="</td>";
         conteudo +="</tr>";
         $('.table').append(conteudo);
