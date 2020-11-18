@@ -1,5 +1,5 @@
 var storage = window.localStorage;
-var array = [];
+var arrayUsuario = [];
 
 $(document).ready(function(){
 
@@ -8,6 +8,31 @@ $(document).ready(function(){
 
 });
 
+function removerProduto(){
+ 
+    //Pega o produto
+    var produto = JSON.parse(storage.getItem('produto-pagar'));
+
+    console.log(produto);
+
+    var arrayProdutos = JSON.parse(storage.getItem('item'));
+
+    console.log(arrayProdutos);
+
+    for(let x = 0; x < arrayProdutos.length; x++){
+
+        if(arrayProdutos[x][0] == produto){
+
+            //Remove o produto do localStorage
+            arrayProdutos.splice(x,1);
+
+            //Atualiza o localStorage
+            storage.setItem('item', JSON.stringify(arrayProdutos));   
+            
+            storage.removeItem('produto-pagar');
+        }
+    }
+}
 
 function verificaUsuario(){
 
@@ -15,11 +40,11 @@ function verificaUsuario(){
 
         var email = $("#email").val();
     
-        array = JSON.parse(storage.getItem('cadastro'));
+        arrayUsuario = JSON.parse(storage.getItem('cadastro'));
 
-        for(let x = 0; x < array.length; x++){
+        for(let x = 0; x < arrayUsuario.length; x++){
 
-            if(array[x][1] == email && array[x][5] == "conf"){
+            if(arrayUsuario[x][1] == email && arrayUsuario[x][5] == "conf"){
                 
                 alertify.success('Pagamento realizado!');
 
@@ -30,8 +55,10 @@ function verificaUsuario(){
                 $("#data-validade").val("");
                 $("#cvv").val("");
 
+                removerProduto();
+
             } else {
-                alertify.error('Precisa fazer Login para efetuar a compra');
+                alertify.error('Precisa fazer Login');  
             }
         }
     });

@@ -15,7 +15,11 @@ function pagar(){
 
         $(`#btn2-${x}`).click(function(){
 
-            window.location.assing("../PAGINAS/pagamento.html");
+            var produto = array[x][0];
+
+            storage.setItem('produto-pagar', JSON.stringify(produto));  
+
+            window.location.assign("../PAGINAS/pagamento.html");
         
         });
     }
